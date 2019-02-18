@@ -18,3 +18,9 @@ Route::get('/login',  'HomeController@login')->name('login');
 Route::post('/do_login',  'HomeController@do_login');
 
 Route::get('/logout',  'HomeController@do_logout');
+
+Route::get('/menus/list',  'MenusController@listView');
+
+Route::get('/menu/edit/{id}',  'MenusController@editView');
+
+Route::post('/menu/do_edit/{id}',  'MenusController@doEdit');
